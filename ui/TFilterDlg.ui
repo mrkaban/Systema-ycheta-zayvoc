@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TFilterDlg</class>
+ <widget class="QDialog" name="TFilterDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>576</width>
+    <height>180</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>576</width>
+    <height>180</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>576</width>
+    <height>180</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Filter</string>
+  </property>
+  <widget class="QPushButton" name="cancelBtn">
+   <property name="geometry">
+    <rect>
+     <x>452</x>
+     <y>36</y>
+     <width>120</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/request.qrc">
+     <normaloff>:/images/cancel</normaloff>:/images/cancel</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="okBtn">
+   <property name="geometry">
+    <rect>
+     <x>452</x>
+     <y>12</y>
+     <width>120</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/request.qrc">
+     <normaloff>:/images/ok</normaloff>:/images/ok</iconset>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="filterGroup">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>4</y>
+     <width>444</width>
+     <height>176</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Filter</string>
+   </property>
+   <widget class="QComboBox" name="clientCombo">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>36</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="importanceCombo">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>36</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="requestFromDateEdit">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>116</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="typeCombo">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>60</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="statusCombo">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>84</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="realizeFromDateEdit">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>148</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="performerCombo">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>84</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="requestToDateEdit">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>116</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="realizeToDateEdit">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>148</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="addressEdit">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>60</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>110</y>
+      <width>412</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>142</y>
+      <width>412</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>224</x>
+      <y>120</y>
+      <width>92</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>to</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>224</x>
+      <y>152</y>
+      <width>92</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>to</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="clientCheck">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>36</y>
+      <width>92</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Client</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="addressCheck">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>60</y>
+      <width>92</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Address</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="performerCheck">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>84</y>
+      <width>92</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Performer</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="importanceCheck">
+    <property name="geometry">
+     <rect>
+      <x>224</x>
+      <y>36</y>
+      <width>92</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Importance</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="typeCheck">
+    <property name="geometry">
+     <rect>
+      <x>224</x>
+      <y>60</y>
+      <width>92</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Type</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="statusCheck">
+    <property name="geometry">
+     <rect>
+      <x>224</x>
+      <y>84</y>
+      <width>92</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="requestCheck">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>116</y>
+      <width>92</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Request from</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="realizeCheck">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>148</y>
+      <width>92</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Realiaze from</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="numberCheck">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>12</y>
+      <width>92</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Number</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="numberEdit">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>12</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>numberCheck</tabstop>
+  <tabstop>numberEdit</tabstop>
+  <tabstop>clientCheck</tabstop>
+  <tabstop>clientCombo</tabstop>
+  <tabstop>addressCheck</tabstop>
+  <tabstop>addressEdit</tabstop>
+  <tabstop>performerCheck</tabstop>
+  <tabstop>performerCombo</tabstop>
+  <tabstop>importanceCheck</tabstop>
+  <tabstop>importanceCombo</tabstop>
+  <tabstop>typeCheck</tabstop>
+  <tabstop>typeCombo</tabstop>
+  <tabstop>statusCheck</tabstop>
+  <tabstop>statusCombo</tabstop>
+  <tabstop>requestCheck</tabstop>
+  <tabstop>requestFromDateEdit</tabstop>
+  <tabstop>requestToDateEdit</tabstop>
+  <tabstop>realizeCheck</tabstop>
+  <tabstop>realizeFromDateEdit</tabstop>
+  <tabstop>realizeToDateEdit</tabstop>
+  <tabstop>okBtn</tabstop>
+  <tabstop>cancelBtn</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../res/request.qrc"/>
+ </resources>
+ <connections/>
+</ui>

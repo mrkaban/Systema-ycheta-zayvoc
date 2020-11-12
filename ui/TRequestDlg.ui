@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TRequestDlg</class>
+ <widget class="QDialog" name="TRequestDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>304</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>560</width>
+    <height>304</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>560</width>
+    <height>304</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Request</string>
+  </property>
+  <widget class="QPushButton" name="okBtn">
+   <property name="geometry">
+    <rect>
+     <x>436</x>
+     <y>8</y>
+     <width>120</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/request.qrc">
+     <normaloff>:/images/ok</normaloff>:/images/ok</iconset>
+   </property>
+   <property name="default">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelBtn">
+   <property name="geometry">
+    <rect>
+     <x>436</x>
+     <y>32</y>
+     <width>120</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../res/request.qrc">
+     <normaloff>:/images/cancel</normaloff>:/images/cancel</iconset>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="requestGroup">
+   <property name="geometry">
+    <rect>
+     <x>4</x>
+     <y>4</y>
+     <width>212</width>
+     <height>296</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Request</string>
+   </property>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>16</y>
+      <width>80</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>Number</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>38</y>
+      <width>80</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>Importance</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>62</y>
+      <width>80</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>Type</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>86</y>
+      <width>80</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>Status</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>110</y>
+      <width>80</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>Request date</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>208</y>
+      <width>204</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>Note</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>134</y>
+      <width>80</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>Client</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>204</y>
+      <width>204</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="numberEdit">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>12</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="importanceCombo">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>36</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="typeCombo">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>60</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="statusCombo">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>84</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="clientCombo">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>132</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="requestDateEdit">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>108</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="requestNoteEdit">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>228</y>
+      <width>204</width>
+      <height>64</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>158</y>
+      <width>80</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>Address</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="addressEdit">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>156</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="contactEdit">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>180</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>182</y>
+      <width>80</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>Contact</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="realizeGroup">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>4</y>
+     <width>212</width>
+     <height>296</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Realize</string>
+   </property>
+   <widget class="QPlainTextEdit" name="realizeNoteEdit">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>228</y>
+      <width>204</width>
+      <height>64</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QDateEdit" name="realizeDateEdit">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>12</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+    <property name="calendarPopup">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>14</y>
+      <width>80</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>Ralize date</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="performerCombo">
+    <property name="geometry">
+     <rect>
+      <x>88</x>
+      <y>36</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="performerLbl">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>38</y>
+      <width>80</width>
+      <height>14</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>Performer</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>208</y>
+      <width>204</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string>Note</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>204</y>
+      <width>204</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="workersEdit">
+    <property name="geometry">
+     <rect>
+      <x>4</x>
+      <y>92</y>
+      <width>204</width>
+      <height>109</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addBtn">
+    <property name="geometry">
+     <rect>
+      <x>132</x>
+      <y>64</y>
+      <width>76</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Add</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>numberEdit</tabstop>
+  <tabstop>importanceCombo</tabstop>
+  <tabstop>typeCombo</tabstop>
+  <tabstop>statusCombo</tabstop>
+  <tabstop>requestDateEdit</tabstop>
+  <tabstop>clientCombo</tabstop>
+  <tabstop>addressEdit</tabstop>
+  <tabstop>contactEdit</tabstop>
+  <tabstop>requestNoteEdit</tabstop>
+  <tabstop>realizeDateEdit</tabstop>
+  <tabstop>performerCombo</tabstop>
+  <tabstop>addBtn</tabstop>
+  <tabstop>workersEdit</tabstop>
+  <tabstop>realizeNoteEdit</tabstop>
+  <tabstop>okBtn</tabstop>
+  <tabstop>cancelBtn</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../res/request.qrc"/>
+ </resources>
+ <connections/>
+</ui>
