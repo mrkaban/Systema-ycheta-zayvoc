@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/images">
+        <file alias="append">append.png</file>
+        <file alias="edit">edit.png</file>
+        <file alias="print">print.png</file>
+        <file alias="remove">remove.png</file>
+        <file alias="cancel">cancel.png</file>
+        <file alias="exit">exit.png</file>
+        <file alias="filter">filter.png</file>
+        <file alias="ok">ok.png</file>
+        <file alias="report">report.png</file>
+        <file alias="preview">preview.png</file>
+    </qresource>
+</RCC>
